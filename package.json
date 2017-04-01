@@ -1,8 +1,7 @@
 {
-  "name": "karma_jasmine",
+  "name": "karma_phantomjs_jasmine",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Example of karma with phantomjs and jasmine",
   "scripts": {
     "test": "./node_modules/.bin/karma start --single-run"
   },
