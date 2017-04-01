@@ -23,4 +23,12 @@ describe('test lib', function () {
 
     expect(throwFunction.calls.allArgs()).toEqual([['some arg']]);
   });
+
+  it('returnStringDate', function () {
+    var baseTime = new Date(2017, 1, 1);
+
+    jasmine.clock().mockDate(baseTime);
+
+    expect(returnStringDate()).toBe('Wed Feb 01 2017 00:00:00 GMT-0300 (CLST)');
+  });
 });
